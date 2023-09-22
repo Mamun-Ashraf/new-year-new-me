@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    font-family: 'Mooli', sans-serif;
+}
+
+/* styles of header section */
+
+header {
+    background-image: url("../images/banner/banner1.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    padding: 216px 230px 166px;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.banner {
+
+    text-align: right;
+    width: 45%;
+}
+
+.banner .title {
+    font-size: 65px;
+    font-weight: bolder;
+    margin-bottom: 24px;
+    color: #151414;
+}
+
+.banner .description {
+    color: #444343;
+    margin-bottom: 32px;
+}
+
+.btn-primary {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #F15B22;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    border: 0;
+    border-radius: 5px;
+}
