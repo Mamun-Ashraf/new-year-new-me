@@ -98,3 +98,50 @@ li {
     border: 0;
     border-radius: 5px;
 }
+
+/* Styles of footer section */
+
+footer {
+    padding: 130px 230px;
+    background-color: #151414;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.future {
+    width: 50%;
+}
+
+.future-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.future-description {
+    margin-bottom: 30px;
+}
+
+.future-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.subscribe {
+    width: 30%;
+}
+
+.subscribe-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.subscribe input {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    width: 100%;
+}
