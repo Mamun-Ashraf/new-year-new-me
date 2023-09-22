@@ -42,3 +42,19 @@ header {
     border: 0;
     border-radius: 5px;
 }
+
+/* Styles of my failure section */
+
+section {
+    margin: 130px 230px 0;
+}
+
+.my-failure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
