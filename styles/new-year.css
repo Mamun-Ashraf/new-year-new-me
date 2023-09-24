@@ -129,7 +129,7 @@ Styles of positive mindset section
     background-image: url("../images/gradient1.png"), url("../images/watch.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 130px;
+    margin-bottom: 8.25vw;
     padding: 3vw 3vw;
 }
 
@@ -137,11 +137,12 @@ Styles of positive mindset section
     color: #FFFFFF;
 }
 
-/*
+/*------------------------
 Styles of footer section
+-------------------------*/
 
 footer {
-    padding: 130px 230px;
+    padding: 8.25vw 14.5vw;
     background-color: #151414;
     color: #FFFFFF;
     display: flex;
@@ -152,13 +153,12 @@ footer {
     width: 50%;
 }
 
-.future-title {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 30px;
+.future .title {
+    font-size: 3vw;
+    color: #FFFFFF;
 }
 
-.future-description {
+.future .description {
     margin-bottom: 30px;
 }
 
@@ -171,7 +171,7 @@ footer {
     width: 30%;
 }
 
-.subscribe-title {
+.subscribe .title {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -179,15 +179,20 @@ footer {
 
 .subscribe input {
     border-radius: 5px;
-    padding: 20px;
+    padding: 1.25vw;
     margin-bottom: 20px;
     background-color: transparent;
     width: 100%;
-} */
+}
 
-/* ---------------------
-    Responsive styles
------------------------ */
+.subscribe .btn-primary {
+    color: #FFFFFF;
+    background-color: #005FAC;
+}
+
+/* --------------------------------------
+    Responsive styles for small device
+---------------------------------------- */
 
 @media screen and (max-width:688px) {
 
@@ -200,7 +205,6 @@ footer {
     .my-failure,
     .my-plan {
         flex-direction: column;
-        justify-content: center;
     }
 
     .my-failure-picture,
@@ -216,7 +220,32 @@ footer {
     .my-failure-content .title {
         text-align: center;
     }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    .subscribe,
+    .future {
+        width: 100%;
+    }
+
+    .subscribe {
+        margin-bottom: 5vw;
+    }
+
+    .future-icons {
+        justify-content: center;
+    }
+
+    .subscribe input {
+        width: 50%;
+    }
 }
+
+/* --------------------------------------
+    Responsive styles for medium device
+---------------------------------------- */
 
 @media screen and (min-width:689px) and (max-width:992px) {
     header {
