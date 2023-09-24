@@ -1,49 +1,67 @@
-* {
-    margin: 0;
-    font-family: 'Mooli', sans-serif;
+body {
+    max-width: 1584px;
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
 }
 
-/* styles of header section */
+/* --------------------
+Common styles
+-------------------- */
 
-header {
-    background-image: url("../images/banner/banner1.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    padding: 216px 230px 166px;
-    display: flex;
-    flex-direction: row-reverse;
-
-}
-
-.banner {
-
-    text-align: right;
-    width: 45%;
-}
-
-.banner .title {
-    font-size: 65px;
-    font-weight: bolder;
+.headline {
+    font-size: 4vw;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 0;
     margin-bottom: 24px;
-    color: #151414;
 }
 
-.banner .description {
-    color: #444343;
-    margin-bottom: 32px;
+.title {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #151414;
+    margin-bottom: 24px;
+}
+
+.sub-title {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #151414;
+    margin-bottom: 16px;
 }
 
 .btn-primary {
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #F15B22;
-    color: #FFFFFF;
-    padding: 20px 25px;
+    color: #005FAC;
+    background-color: #FFFFFF;
     border: 0;
     border-radius: 5px;
+    font-size: 1.25vw;
+    font-weight: 600;
+    padding: 1.25vw 1.5vw;
 }
 
-/* Styles of my failure section */
+/*---------------------------
+styles of header section
+----------------------------*/
+
+header {
+    background-image: url("../images/banner/banner3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13.5vw 14.5vw 10.5vw;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.banner .description {
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+/*
+
+Styles of my failure section
 
 section {
     margin: 130px 230px 0;
@@ -59,7 +77,7 @@ li {
     list-style: none;
 }
 
-/* Styles of my plan section */
+Styles of my plan section
 
 .my-plans .headline {
     text-align: center;
@@ -71,7 +89,7 @@ li {
     justify-content: space-between;
 }
 
-/* Styles of positive mindset section */
+Styles of positive mindset section
 
 .positive-mindset {
     border-radius: 10px;
@@ -99,7 +117,7 @@ li {
     border-radius: 5px;
 }
 
-/* Styles of footer section */
+Styles of footer section
 
 footer {
     padding: 130px 230px;
@@ -144,4 +162,27 @@ footer {
     margin-bottom: 20px;
     background-color: transparent;
     width: 100%;
+} */
+
+/* ---------------------
+    Responsive styles
+----------------------- */
+
+@media screen and (max-width:688px) {
+
+    header {
+        background-image: linear-gradient(to right, rgba(0, 1, 7, 0.97), rgba(52, 36, 36, 0.708)), url('../images/banner/banner3.png');
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:689px) and (max-width:992px) {
+    header {
+        background-image: linear-gradient(to left, rgba(0, 1, 7, 0.97), rgba(52, 36, 36, 0.708)), url('../images/banner/banner3.png');
+    }
+}
+
+.hide {
+    display: none;
 }
