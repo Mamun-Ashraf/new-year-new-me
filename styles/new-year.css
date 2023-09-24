@@ -41,7 +41,7 @@ section {
     border-radius: 5px;
     font-size: 1.25vw;
     font-weight: 600;
-    padding: 1.25vw 1.5vw;
+    padding: 18px 24px;
 }
 
 /*---------------------------
@@ -177,6 +177,10 @@ footer {
     margin-bottom: 30px;
 }
 
+.subscribe .sub-title {
+    color: #FFFFFF;
+}
+
 .subscribe input {
     border-radius: 5px;
     padding: 1.25vw;
@@ -202,6 +206,10 @@ footer {
         text-align: left;
     }
 
+    .btn-primary {
+        font-size: 2vw;
+    }
+
     .my-failure,
     .my-plan {
         flex-direction: column;
@@ -219,6 +227,10 @@ footer {
 
     .my-failure-content .title {
         text-align: center;
+    }
+
+    .positive-mindset {
+        margin-top: 20px;
     }
 
     footer {
