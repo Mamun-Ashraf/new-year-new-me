@@ -8,6 +8,10 @@ body {
 Common styles
 -------------------- */
 
+section {
+    margin: 130px 14.5vw 0;
+}
+
 .headline {
     font-size: 4vw;
     font-weight: bold;
@@ -59,24 +63,41 @@ header {
     margin-bottom: 32px;
 }
 
-/*
-
+/*----------------------------
 Styles of my failure section
+-----------------------------*/
 
-section {
-    margin: 130px 230px 0;
-}
 
 .my-failure {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-li {
-    list-style: none;
+.my-failure-picture {
+    width: 40%;
 }
 
+.my-failure-picture img {
+    width: 100%;
+}
+
+.my-failure-content {
+    width: 40%;
+}
+
+.my-failure .description {
+    color: #A2A1A1;
+}
+
+.fa-check {
+    color: #F2F609;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0 10px 8px 0;
+}
+
+/*
 Styles of my plan section
 
 .my-plans .headline {
@@ -175,11 +196,33 @@ footer {
         flex-direction: row;
         text-align: left;
     }
+
+    .my-failure {
+        flex-direction: column;
+    }
+
+    .my-failure-picture,
+    .my-failure-content {
+        width: 100%;
+    }
+
+    .my-failure-picture {
+        margin-bottom: 24px;
+    }
+
+    .my-failure-content .title {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:689px) and (max-width:992px) {
     header {
         background-image: linear-gradient(to left, rgba(0, 1, 7, 0.97), rgba(52, 36, 36, 0.708)), url('../images/banner/banner3.png');
+    }
+
+    .my-failure-picture,
+    .my-failure-content {
+        width: 45%;
     }
 }
 
